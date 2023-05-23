@@ -178,7 +178,7 @@ const Home = () => {
       <div className="homepage-container" style={{maxWidth: 1440, margin: '0 auto'}}>
         <Spin spinning={isLoading} tip="Loading...">
           <Row gutter={[20, 20]}>
-            <Col style={{background: '#fff'}} md={4} sm={0} xs={0}>
+            <Col style={{background: '#fff',paddingLeft:20}} md={4} sm={0} xs={0}>
               <div style={{display: 'flex', justifyContent: 'start',gap:70}}>
                 <span>
                   <FilterTwoTone /> Bộ lọc tìm kiếm

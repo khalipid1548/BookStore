@@ -1,4 +1,4 @@
-import React from 'react';
+
 import PacmanLoader from 'react-spinners/PacmanLoader';
 
 function Loading() {

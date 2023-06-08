@@ -13,11 +13,11 @@ export const callFetchCategory = () => {
 };
 
 export const callCreateBook = (mainText, author, category, price, quantity, sold, thumbnail, slider) => {
-  return axios.post('/api/v1/book', {mainText, author, category, price, quantity, sold, thumbnail, slider});
+  return axios.post('/api/v1/book', { mainText, author, category, price, quantity, sold, thumbnail, slider });
 };
 
 export const callUpdateBook = (_id, thumbnail, slider, mainText, author, price, sold, quantity, category) => {
-  return axios.put(`/api/v1/book/${_id}`, {thumbnail, slider, mainText, author, price, sold, quantity, category});
+  return axios.put(`/api/v1/book/${_id}`, { thumbnail, slider, mainText, author, price, sold, quantity, category });
 };
 
 export const callDeleteBook = (_id) => {
@@ -27,6 +27,7 @@ export const callDeleteBook = (_id) => {
 export const callUploadBookImg = (fileImg) => {
   const bodyFormData = new FormData();
   bodyFormData.append('fileImg', fileImg);
+  
   return axios({
     method: 'post',
     url: '/api/v1/file/upload',

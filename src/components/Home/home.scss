@@ -1,4 +1,9 @@
 .homepage-container {
+    margin:0 auto;
+    max-width: 1440px;
+    
+
+
     .customize-row {
         display: flex;
         flex-wrap: wrap;
@@ -15,21 +20,27 @@
 
             .wrapper {
                 cursor: pointer;
-                box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, .1);
-                border-radius: 0.125rem;
-                padding: .3rem;
+                box-shadow: 0 0.0625rem 0.125rem 0 rgba(0, 0, 0, .5);
+                border-radius: 10px;
+                padding: 10px;
 
                 .text {
                     padding: 0.5rem 0;
                     font-size: .75rem;
                 }
 
-                .rating {
-                    display: flex;
-                    align-items: center;
-                    gap: 10px;
-                }
+               
 
+            }
+
+            .rating {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .text{
+                min-height: 72px;
             }
         }
 

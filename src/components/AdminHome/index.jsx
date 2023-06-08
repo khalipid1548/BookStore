@@ -2,7 +2,7 @@ import {Card, Col, Row, Statistic} from 'antd';
 import {useEffect, useState} from 'react';
 import {callFetchdashboard} from '../../services/api-crud-user';
 
-const index = () => {
+const AdminHome = () => {
   const [user, setUser] = useState(0);
   const [order, setOrder] = useState(0);
 
@@ -34,4 +34,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default AdminHome;
